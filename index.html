@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFRAMEN - Instituto Nacional "General Francisco Menéndez"</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <button id="toggle-dark-mode" class="dark-mode-btn" aria-label="Cambiar modo">🌙</button>
+
+    <div class="container">
+
+        <nav class="navbar">
+            <div class="nav-logo">INFRAMEN</div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#simbolos">Símbolos</a></li>
+                <li><a href="#bachilleratos">Bachilleratos</a></li>
+            </ul>
+        </nav>
+
+        <header id="inicio">
+            <h1>Instituto Nacional "General Francisco Menéndez"</h1>
+            <h2>Conocido como INFRAMEN</h2>
+            <img src="logo-in.png" alt="Escudo o logotipo del INFRAMEN" class="img-container">
+        </header>
+
+        <main>
+            <section class="carrusel-section scroll-anim">
+                <div class="carrusel-container">
+                    <div class="carrusel-slide active">
+                        <img src="logo-in.png" alt="Escudo INFRAMEN">
+                        <div class="carrusel-caption">¡Bienvenidos al INFRAMEN!</div>
+                    </div>
+                    <div class="carrusel-slide">
+                        <img src="logo-in.png" alt="Logo">
+                        <div class="carrusel-caption">Excelencia académica desde 1885</div>
+                    </div>
+                    <button class="carrusel-btn prev" id="prev-slide">❮</button>
+                    <button class="carrusel-btn next" id="next-slide">❯</button>
+                </div>
+            </section>
+
+
+            <section id="historia" class="historia scroll-anim">
+                <h2>Historia</h2>
+                <p>El Instituto Nacional General Francisco Menéndez (INFRAMEN) es uno de los centros educativos más reconocidos de El Salvador. Fue fundado el 1 de mayo de 1885 con el objetivo de ofrecer educación de calidad a los jóvenes del país. Su nombre honra al expresidente salvadoreño General Francisco Menéndez.</p>
+            </section>
+
+            <section class="mision scroll-anim">
+                <h2>Misión Institucional</h2>
+                <p>Formar bachilleres integrales con excelencia académica, crítica, reflexiva y participativa, con principios y valores que les permitan desenvolverse exitosamente en la vida.</p>
+            </section>
+
+            <section class="vision scroll-anim">
+                <h2>Visión Institucional</h2>
+                <p>Ser el instituto líder, innovador y moderno con reconocimiento nacional e internacional por su excelencia académica, deportiva y cultural; la formación en valores y su alto espíritu de servicio a la comunidad.</p>
+            </section>
+
+            <section id="simbolos" class="info scroll-anim">
+                <h2>Importancia</h2>
+                <p>El INFRAMEN ha sido históricamente una institución clave en la educación salvadoreña. A lo largo de los años ha formado miles de estudiantes en las áreas académica, cultural y deportiva.</p>
+
+                <div class="informacion-general">
+                    <h3>Información general</h3>
+                    <ul>
+                        <li><strong>Ubicación:</strong> San Salvador</li>
+                        <li><strong>Tipo:</strong> Instituto Nacional</li>
+                        <li><strong>Fundado:</strong> 1 de mayo de 1885</li>
+                        <li><strong>Nivel educativo:</strong> Educación media (bachillerato)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="bachilleratos" class="bachilleratos scroll-anim">
+                <h2>Bachilleratos que ofrece el INFRAMEN</h2>
+                
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="todos">Ver Todos</button>
+                    <button class="filter-btn" data-filter="2">2 Años</button>
+                    <button class="filter-btn" data-filter="3">3 Años</button>
+                </div>
+                
+                <div class="carreras-grid">
+                    <article class="carrera" data-duracion="2">
+                        <h3>Bachillerato General.</h3>
+                        <p class="duracion">(2 años).</p>
+                        <p>Formación académica general que prepara a los estudiantes para continuar estudios superiores o incorporarse al mundo laboral.</p>
+                        <img src="logo-in.png" alt="Bachillerato General INFRAMEN" class="carreras-img">
+                    </article>
+
+                    <article class="carrera" data-duracion="3">
+                        <h3>Bachillerato Técnico Vocacional en Administrativo Contable.</h3>
+                        <p class="duracion">(3 años).</p>
+                        <p>Prepara a los estudiantes en contabilidad, administración de empresas, registro financiero y gestión económica.</p>
+                        <img src="AC-IN-removebg-preview.png" alt="Bachillerato Administrativo Contable INFRAMEN" class="carreras-img">
+                    </article>
+
+                    <article class="carrera" data-duracion="3">
+                        <h3>Bachillerato Técnico Vocacional en Desarrollo de Software.</h3>
+                        <p class="duracion">(3 años).</p>
+                        <p>Forma estudiantes en programación, desarrollo de aplicaciones, bases de datos y tecnología informática.</p>
+                        <img src="DS-IN.jpg" alt="Bachillerato en Desarrollo de Software INFRAMEN" class="carreras-img">
+                    </article>
+
+                    <article class="carrera" data-duracion="3">
+                        <h3>Bachillerato Técnico Vocacional en Salud.</h3>
+                        <p class="duracion">(3 años).</p>
+                        <p>Forma estudiantes con conocimientos básicos en salud, primeros auxilios y atención médica básica.</p>
+                        <img src="Salud-IN.jpg" alt="Bachillerato en Salud INFRAMEN" class="carreras-img">
+                    </article>
+
+                    <article class="carrera" data-duracion="3">
+                        <h3>Bachillerato Técnico Vocacional en Servicios Turísticos.</h3>
+                        <p class="duracion">(3 años).</p>
+                        <p>Capacita en atención al cliente, gestión turística, organización de viajes y promoción cultural.</p>
+                        <img src="ST-IN.png" alt="Bachillerato en Servicios Turísticos INFRAMEN" class="carreras-img">
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p> &copy; 2026 Página web creada por David R. | 2026<br>D.E: KISH</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
